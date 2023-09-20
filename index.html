@@ -21,8 +21,8 @@
 
     <div id="app">
 
-        <ul>
-            <li v-for="(adress,index) in emailAdress">{{emailAdress[index]}}</li>
+        <ul v-show="emailAdress.length > 9">
+            <li v-for="(adress,index) in emailAdress">{{adress}}</li>
         </ul>
       
     </div>
