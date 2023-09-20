@@ -21,9 +21,10 @@
 
     <div id="app">
 
-        <ul v-show="emailAdress.length > 9">
+        <ul v-if="emailAdress.length === (numberOfMail)">
             <li v-for="(adress,index) in emailAdress">{{adress}}</li>
         </ul>
+        <h1 v-else >mail in caricamento</h1>
       
     </div>
 
